@@ -7,6 +7,7 @@ html, body {
     background: black;
 
 }
+/* CSS for the effect */
 
 nav ul {
     list-style-type: none;
@@ -17,7 +18,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 nav ul li:last-child {
@@ -40,15 +41,30 @@ nav ul li a {
     /* margin-top: 50px; */
 }
 
-@media screen and (max-width: 768px) {
-    .header {
-        font-size: 40px;
+/* Responsive styles */
+@media screen and (min-width: 1024px) {
+    /* CSS rules for laptops */
+    .content{
+        margin-right: 300px;
+        margin-left: 300px;
+        padding-top: 20px;
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #f9f9f9;
+        /* border-top: 1px solid #ddd;  */
+        color: #666; /* Text color for footer */
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .header {
-        font-size: 30px;
+        font-size: 50px;
+    }
+
+    nav ul {
+        text-align: center;
     }
 
     nav ul li {
@@ -59,4 +75,272 @@ nav ul li a {
     nav ul li:last-child {
         margin-bottom: 0;
     }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #f9f9f9;
+        /* border-top: 1px solid #ddd;  */
+        color: #666; /* Text color for footer */
+    }
+    .content{
+        margin-right: 170px;
+        margin-left: 170px;
+        padding-top: 20px;
+    }
+    /* form */
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        /* background-color: rgb(73, 70, 70); */
+        border: solid whitesmoke 2px;
+    
+        box-shadow: #7a7777 10px 10px 60px;
+    }form:hover {
+        border-color:thistle; /* Change border color on hover */
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 1px;
+        font-size: 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid ghostwhite;
+        border-radius: 6px;
+        height: 10px;
+    }
+    input:hover{
+        border-color:thistle;
+    }
+    
+    textarea {
+        resize: vertical;
+    }
+    
+    button[type="submit"] {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:#7a7777;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Additional styles */
+    hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ccc;
+    }
+
+    
 }
+
+@media screen and (max-width: 576px) {
+    .header {
+        font-size: 45px;
+    }
+
+    nav ul li {
+        font-size: 15px;
+    }
+    .content{
+        padding: 10px;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: white;
+        text-align: left;
+        margin-left: 50px;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #f9f9f9;
+        /* border-top: 1px solid #ddd;  */
+        color: #666; /* Text color for footer */
+    }
+    /* form */
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        /* background-color: rgb(73, 70, 70); */
+        border: solid whitesmoke 2px;
+    
+        box-shadow: #7a7777 10px 10px 60px;
+    }
+    form:hover {
+        border-color:thistle; /* Change border color on hover */
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 1px;
+        font-size: 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid ghostwhite;
+        border-radius: 6px;
+        height: 10px;
+    }
+    input:hover{
+        border-color:thistle;
+    }
+    
+    textarea {
+        resize: vertical;
+    }
+    
+    button[type="submit"] {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:#7a7777;
+        color: black;
+        font-family: "Chakra Petch", sans-serif;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Additional styles */
+    hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ccc;
+    }
+}
+
+/* Navbar effect */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+    color: gray; /* Change color to gray on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.content{
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+}
+.blinking-cursor {
+    animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* collobration */
+/* Form styling */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: rgb(73, 70, 70); */
+    border: solid whitesmoke 2px;
+
+    box-shadow: #7a7777 10px 10px 60px;
+}
+.form:hover {
+    border-color:thistle; /* Change border color on hover */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid ghostwhite;
+    border-radius: 6px;
+    height: 10px;
+}
+input:hover{
+    border-color:thistle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#7a7777;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles */
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+

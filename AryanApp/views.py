@@ -1,14 +1,14 @@
 from django.shortcuts import render
 from django.http.response import HttpResponse
-from .models import Collobrate
+from .models import Services
 
 # Create your views here.
 
 def home(request):
     return render(request,"home.html")
 
-def collobrate(request):
-    collo_model = Collobrate()
+def services(request):
+    collo_model = Services()
     if request.method == "POST":
         collo_model.fullname = request.POST['fullname']
         collo_model.definition = request.POST['project']

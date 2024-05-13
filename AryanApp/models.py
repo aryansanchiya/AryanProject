@@ -12,7 +12,7 @@ class Writing(models.Model):
     description2 = models.TextField()
     Author = models.CharField(max_length=255)
 
-class Collobrate(models.Model):
+class Services(models.Model):
     fullname = models.CharField(max_length=255);
     definition = models.TextField()
     company_name = models.CharField(max_length=255)
